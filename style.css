@@ -14,7 +14,7 @@ body {
     background-color: black;
 }
 
-#header_section {
+#header {
     padding: 20px;
     padding-inline: 30px;
     display: flex;
@@ -23,7 +23,12 @@ body {
     background-color: black;
     position: sticky;
     top: 0px;
+    z-index: 1000;
+}
 
+#header>a{
+    font-weight: 700;
+    font-size: 29px;
 }
 
 a {
@@ -31,6 +36,9 @@ a {
     color: white;
 }
 
+#navbar a{
+    text-transform: uppercase;
+}
 #navbar>a:hover,
 #media_icon>a:hover {
     color: lightgray;
@@ -40,7 +48,7 @@ a {
     width: 50%;
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #media_icon {
@@ -51,18 +59,20 @@ a {
 }
 
 #hero-container {
-    background: url("./img/pizza1\ 1.png");
+    /* background: url("./img/pizza1 1.png"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/pizza1 1.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vw;
+    background-size:cover;
+    height: 1000px;
     padding: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap:50px;
 }
 
+
 #hero-container>h1 {
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 700;
     width: 50%;
 }
@@ -74,9 +84,10 @@ a {
 }
 
 .p-text {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     text-align: justify;
+    padding-right: 8% ;
 }
 
 #hero-container>p {
@@ -89,6 +100,12 @@ a {
 #gallary_section,
 #find_us {
     padding: 50px;
+}
+
+.about .horizontal_line{
+    background-color: #F24C4C;
+    height: 1px;
+    width: 500px;
 }
 
 .line {
